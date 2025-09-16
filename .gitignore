@@ -5,3 +5,5 @@
 .DS_Store
 .quarto
 *.html
+index_files/*
+index.html
