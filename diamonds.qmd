@@ -6,8 +6,10 @@ editor: visual
 
 ```{r}
 diamonds_df <- ggplot2::diamonds
+curr_time <- paste0(timestamp())
 ggplot2::ggplot(data = diamonds_df, 
                 ggplot2::aes(x = carat,
                              y = price)) +
-  ggplot2::geom_line()
+  ggplot2::geom_line() +
+  ggplot2::labs(title = curr_time)
 ```
