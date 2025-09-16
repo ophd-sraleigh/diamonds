@@ -1,0 +1,13 @@
+---
+title: "diamonds"
+format: html
+editor: visual
+---
+
+```{r}
+diamonds_df <- ggplot2::diamonds
+ggplot2::ggplot(data = diamonds_df, 
+                ggplot2::aes(x = carat,
+                             y = price)) +
+  ggplot2::geom_line()
+```
